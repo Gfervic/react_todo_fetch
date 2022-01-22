@@ -1,4 +1,4 @@
-
+/* @import "~bootstrap/scss/bootstrap.scss"; */
 /* 
 
     You can write your own styles here...
@@ -10,3 +10,102 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.todos {
+    font-size: 5rem;
+    color: purple;
+    font-weight: bolder;
+}
+
+.header {
+    font-size: 2.5rem;
+
+}
+
+.todo-list {
+    margin: 25px auto;
+    width: 800px;
+    text-align: center;
+    color: 	#58ffb1;
+    font-size: 20px;
+    border: 1.5px solid rgba(53, 53, 53, 0.4);
+    border-radius: 2px;
+    padding: 30px 10px;
+    box-shadow: 0px 5px 0px 0px #292929, 0px 10px 0px 0px#797979, 0px 15px 0px 0px #c7c7c7, 5px 5px 15px 5px rgba(0,0,0,0);
+  } 
+
+.add {
+    color: black ;
+    border: 2px solid #58ffb1;
+    background: none;
+    padding: 5px 10px; 
+    margin-left: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.add:hover {
+    position: relative;
+    bottom: 1px;
+    border: 1px solid #12f543;
+    background-color: #12f543;
+    color: white;
+    cursor:pointer;
+}
+
+input {
+    border-style: none;
+    border-bottom: 1px solid #58ffb1;
+    width: 450px;
+    margin-top: 45px;
+}
+
+ul {
+    list-style-type: lower-roman;
+    margin: 35px 75px;
+    padding-left: 30px;
+    text-align: left;
+    font-size: 20px;
+    color: black;
+}
+
+li {
+    display: flex;
+    margin: 10px 5px;
+}
+
+li:before { content: '👉'; margin-left: -30px; margin-right: 10px; } 
+/* the content code matches an icon from fontawesome */
+
+.delete{
+    color: black ;
+    border: 2px solid rgb(245, 64, 118);
+    background: none;
+    padding: 5px 10px; 
+    margin-left: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.delete:hover {
+    position: relative;
+    bottom: 1px;
+    border: 1px solid #FF5733 ;
+    background-color: #FF5733;
+    color: white;
+    cursor:pointer;
+}
+
+

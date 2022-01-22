@@ -6,8 +6,8 @@ import TodoList from "./todo-list.jsx";
 //create your first component
 const Home = () => {
 	return (
-		<div>
-			<h2>todos</h2>
+		<div className="text-center mt-5">
+			<h2 className="todos">todos</h2>
 			<TodoList />
 		</div>
 	);
